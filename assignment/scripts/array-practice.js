@@ -99,22 +99,14 @@ console.log(faveFoods);
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 new_faveFoods = faveFoods.toString();
+new_faveFoods = new_faveFoods.replaceAll(',', ' and ');
 console.log(new_faveFoods);
-console.log(new_faveFoods.length);
 
-// for (let i = 0; i < new_faveFoods.length; i++) {
-//     if (new_faveFoods[i] === ',') {
-//         new_faveFoods.replace(',', ' and ');
-//     }
-// }
-// console.log(new_faveFoods);
-
-// new_faveFoods = string_faveFoods.replace(',', 'and');
-// console.log(new_faveFoods);
-//make a loop to go through each char. if char === ',' replace with 'and' using method
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+new_array = faveFoods.concat(animalArray);
+console.log(new_array);
